@@ -30,7 +30,7 @@
 </head>
 <body>
 <!--********************************************************************-->
-<!--************************ CABEÇALHO DA PÁGINA ***********************-->
+<!--************************ BARRA DE NAVEGAÇÃO ************************-->
 <!--********************************************************************-->
 <header>
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -44,7 +44,10 @@
             <li><a href="#">V</a></li>
         </ul>
     </nav>
-    
+
+<!--********************************************************************-->
+<!--************************ TÍTULO DA PÁGINA ************************-->
+<!--********************************************************************-->
     <div class="jumbotron text-center">
         <h1>Engenheiro Jair Junior</h1>
         <p>Desenvolvimento e know-how em Engenharia Eletrônica</p>
@@ -52,20 +55,19 @@
 </header>
 
 
-<!--********************************************************************-->
-<!--*********************** CONTEÚDO DA PÁGINA *************************-->
-<!--********************************************************************-->
+
 <div class="container">
-
-
+<!--********************************************************************-->
+<!--************************  SLIDER SUPERIOR  *************************-->
+<!--********************************************************************-->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
+        <!-- Indicadores (bolinhas na parte inferior do slider) -->
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
         </ol>
-        <!-- Wrapper for slides -->
+        <!-- Wrapper para os slides -->
         <div class="carousel-inner">
             <div class="item active">
                 <img src="imagens/digital.jpg" alt="Digital" style="width:100%;">
@@ -74,7 +76,6 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque leo neque, fermentum at molestie nec.</p>
                 </div>
             </div>
-
             <div class="item">
                 <img src="imagens/carro.jpg" alt="Carro" style="width:100%;">
                 <div class="carousel-caption">
@@ -82,7 +83,6 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque leo neque, fermentum at molestie nec.</p>
                 </div>
             </div>
-
             <div class="item">
                 <img src="imagens/toronto.jpg" alt="Toronto" style="width:100%;">
                 <div class="carousel-caption">
@@ -91,8 +91,7 @@
                 </div>
             </div>
         </div>
-
-        <!-- Left and right controls -->
+        <!-- Controles para transições direta e esquerda -->
         <a class="left carousel-control" href="#myCarousel" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left"></span>
             <span class="sr-only">Anterior</span>
@@ -103,13 +102,13 @@
         </a>
     </div>
 
-
-
+<!--********************************************************************-->
+<!--***********************  POSTS POPULARES  **************************-->
 <!--********************************************************************-->
     <div class="page-header">
         <h1>Populares <small>Os mais lidos</small></h1>
     </div>
-
+    <!-- Primeira linha -->
     <div class="row">
         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
             <div class="thumbnail">
@@ -148,7 +147,7 @@
             </div>
         </div>
     </div>
-
+    <!-- Segunda linha -->
     <div class="row">
         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
             <div class="thumbnail">
@@ -189,6 +188,8 @@
     </div>
 
 <!--********************************************************************-->
+<!--*********************** LEITURA RECOMENDADA ************************-->
+<!--********************************************************************-->
     <div class="page-header">
         <h1>Leitura Recomendada <small>Sugestões do autor</small></h1>
     </div>
@@ -206,7 +207,6 @@
                 </div>
             </div>
         </div>
-
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
             <div class="thumbnail">
                 <a href="imagens/earth.jpg">
@@ -221,7 +221,8 @@
         </div>
     </div>
 
-
+<!--********************************************************************-->
+<!--*********************** POSTS POR CATEGORA *************************-->
 <!--********************************************************************-->
     <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -244,7 +245,6 @@
                     </ul>
                 </li>
             </ul>
-
             <!-- Conteúdo das abas-->
             <div class="tab-content">
                 <div class="tab-pane fade active" id="tab-arduino">
@@ -275,18 +275,18 @@
                     <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut convallis blandit nunc a molestie. Mauris eu ante facilisis, posuere diam in, iaculis dolor. Donec hendrerit placerat odio. Morbi hendrerit risus ut ante blandit fermentum. Vivamus non nisl ac quam aliquet imperdiet tempor at erat. Praesent sed ante eget ipsum blandit efficitur ac ut dolor. Aliquam erat volutpat. Ut posuere nulla magna, ut laoreet est fermentum quis. Donec non nisl sit amet tortor laoreet volutpat ut nec nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed sollicitudin venenatis lacus ut aliquet. Nunc fermentum orci purus, et efficitur magna mollis quis. Nam eget venenatis metus. Etiam sed rutrum nunc.</p>
                 </div>
             </div>
-
-
-
         </div>
 
-
-
+<!--********************************************************************-->
+<!--*************************  SOBRE O AUTOR  **************************-->
+<!--********************************************************************-->
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
             <h1>Sobre o autor <small>Jair Junior</small></h1>
         </div>
     </div>
 
+<!--********************************************************************-->
+<!--*********************  NOTÍCIAS E NOVIDADES  ***********************-->
 <!--********************************************************************-->
     <div class="page-header">
         <h1>Notícias <small>Novidades e atualidades</small></h1>
@@ -325,8 +325,9 @@
             </div>
         </div>
     </div>
-
 </div>
+<!-- /container -->
+
 <!--********************************************************************-->
 <!--************************* RODAPÉ DA PÁGINA *************************-->
 <!--********************************************************************-->
@@ -335,30 +336,30 @@
         <div class="row">
             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                 <h3> Páginas </h3>
-                    <ul>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
-                    </ul>
+                <ul>
+                    <li> <a href="#"> Lorem Ipsum </a> </li>
+                    <li> <a href="#"> Lorem Ipsum </a> </li>
+                    <li> <a href="#"> Lorem Ipsum </a> </li>
+                    <li> <a href="#"> Lorem Ipsum </a> </li>
+                </ul>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-            <h3> Categorias </h3>
-                    <ul>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
-                    </ul>
+                <h3> Categorias </h3>
+                <ul>
+                    <li> <a href="#"> Lorem Ipsum </a> </li>
+                    <li> <a href="#"> Lorem Ipsum </a> </li>
+                    <li> <a href="#"> Lorem Ipsum </a> </li>
+                    <li> <a href="#"> Lorem Ipsum </a> </li>
+                </ul>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-            <h3> Tags </h3>
-                    <ul>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
-                    </ul>
+                <h3> Tags </h3>
+                <ul>
+                    <li> <a href="#"> Lorem Ipsum </a> </li>
+                    <li> <a href="#"> Lorem Ipsum </a> </li>
+                    <li> <a href="#"> Lorem Ipsum </a> </li>
+                    <li> <a href="#"> Lorem Ipsum </a> </li>
+                </ul>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                 <h3> Newsletter </h3>
@@ -374,19 +375,18 @@
         </div>
     </div>
 
+    <!-- Faixa do rodapé inferior -->
     <div class="footer-bottom">
         <div class="container">
-            <p class="pull-left"> Copyright © Footer E-commerce Plugin 2014. All right reserved. </p>
+            <p class="pull-left"> Copyright © Footer E-commerce Plugin 2014. All right reserved.</p>
         </div>
     </div>
 
 </footer>
-
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
 </body>
 </html>
