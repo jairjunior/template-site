@@ -1,3 +1,28 @@
+.my-site-title{
+    font-size: 4.0em;
+}
+.my-site-description{
+    font-size: 1.1em;
+}
+.top-container{
+    padding-top: 30px;
+    padding-bottom: 50px;
+    background-color: black;
+    color: white;
+}
+
+.affix {
+    top: 0;
+    width: 100%;
+}
+.affix + .container-fluid {
+    padding-top: 0px;
+}
+.navbar{
+    z-index: 100;
+}
+
+
 /* Modificação para mostrar a faixa escura atrás do título no slider */
 .carousel-caption {
     background-color: rgba(0, 0, 0, 0.6);
