@@ -1,0 +1,81 @@
+body{
+    margin: 0px;
+    background-color: #FAFAFA;
+}
+nav {
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+nav ul{
+    background: none;
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+}
+nav li{
+    background-color: lightgray;
+    display: inline-block;
+    margin: 0px;
+    padding: 10px;
+}
+nav a {
+    background-color: none;
+    margin: 0px;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Calibri";
+    color: white;
+    font-size: 1em;
+}
+nav li:hover {
+    background-color: #ddd;
+}
+nav a:hover {
+    color: black;
+}
+.categorias{
+    float: right;
+    display: inline-block;
+}
+
+/* Modificação para mostrar a faixa escura atrás do título no slider */
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.6);
+    right: 0px;
+    left: 0px;
+    padding-top: 0px;
+}
+
+footer{
+    margin-top: 70px;
+    background-color: #EDEFF1;
+    border-top: 2px solid #DDDDDD;
+}
+footer ul{
+    list-style-type: none;
+        padding-left: 0;
+}
+footer h3 {
+    border-bottom: 1px solid #BAC1C8;
+    color: #54697E;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    padding: 40px 0 10px;
+    text-transform: uppercase;
+}
+.footer-bottom{
+    background-color: #E3E3E3;
+    border-top: 1px solid #DDDDDD;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.footer-bottom p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0px;
+}
