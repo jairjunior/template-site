@@ -1,16 +1,46 @@
+@font-face {
+  font-family: rexlia;
+  src:  url('fonts/rexlia/rexlia.woff2') format('woff2'),
+        url('fonts/rexlia/rexlia.woff') format('woff'),
+        url('fonts/rexlia/rexlia.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+}
 .my-site-title{
-    font-size: 4.0em;
+    font-family: rexlia;
+    font-size: 4.4em;
+    margin-bottom: 30px;
 }
 .my-site-description{
-    font-size: 1.1em;
+    font-family: Georgia, serif;
+    font-size: 1.3em;
+    font-style: italic;
+
 }
-.top-container{
+.my-top-container{
     padding-top: 30px;
     padding-bottom: 50px;
     background-color: black;
     color: white;
 }
+.my-top-navigation{
+    background-color: yellow;
+}
+.my-top-navigation a{
+    background-color: none;
+    text-transform: uppercase;
+    font-family: "Helvetica W01", Arial, Sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.16em;
+    color: #F9F8F6;
+    display: inline-block;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+
+/* Configurações para a barra de navegação superior */
 .affix {
     top: 0;
     width: 100%;
@@ -22,7 +52,6 @@
     z-index: 100;
 }
 
-
 /* Modificação para mostrar a faixa escura atrás do título no slider */
 .carousel-caption {
     background-color: rgba(0, 0, 0, 0.6);
@@ -31,6 +60,8 @@
     padding-top: 0px;
 }
 
+
+/* Configurações do rodapé */
 footer{
     margin-top: 70px;
     background-color: #EDEFF1;

@@ -32,7 +32,7 @@
 <!--********************************************************************-->
 <!--************************ TÍTULO DA PÁGINA ************************-->
 <!--********************************************************************-->
-<div class="container-fluid top-container">
+<div class="container-fluid my-top-container">
     <div class="text-center">
         <h1 class="my-site-title">Engenheiro Jair Junior</h1>
         <p class="my-site-description">Desenvolvimento e know-how em Engenharia Eletrônica</p>
@@ -42,13 +42,27 @@
 <!--********************************************************************-->
 <!--************************ BARRA DE NAVEGAÇÃO ************************-->
 <!--********************************************************************-->
-<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="197">
-  <ul class="nav navbar-nav">
-    <li class="active"><a href="#">Basic Topnav</a></li>
-    <li><a href="#">Page 1</a></li>
-    <li><a href="#">Page 2</a></li>
-    <li><a href="#">Page 3</a></li>
-  </ul>
+<nav class="navbar navbar-default my-top-navigation" data-spy="affix" data-offset-top="197">
+    <div class="container">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Arduino</a></li>
+            <li><a href="#">Eletrônica</a></li>
+            <li><a href="#">Sistemas Embarcados</a></li>
+            <li><a href="#">Programação</a></li>
+            <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Mais <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Programação</a></li>
+                    <li><a href="#">Ferramentas</a></li>
+                    <li><a href="#">Processamento de Imagens</a></li>
+                    <li><a href="#">Notícias</a></li> 
+                    <li><a href="#">Vídeos</a></li> 
+                </ul>
+            </li>
+            <li><a href="#"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a></li>
+        </ul>
+    </div>
 </nav>
 
 
