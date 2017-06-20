@@ -30,41 +30,71 @@
 </head>
 <body>
 <!--********************************************************************-->
-<!--************************ TÍTULO DA PÁGINA ************************-->
+<!--***********************  TÍTULO DA PÁGINA  ***********************-->
 <!--********************************************************************-->
 <div class="container-fluid my-top-container">
-    <div class="text-center">
+    <div class="text-center">     
         <h1 class="my-site-title">Engenheiro Jair Junior</h1>
         <p class="my-site-description">Desenvolvimento e know-how em Engenharia Eletrônica</p>
     </div>
 </div>
 
 <!--********************************************************************-->
-<!--************************ BARRA DE NAVEGAÇÃO ************************-->
+<!--********************  BARRA DE NAVEGAÇÃO FIXA  *********************-->
 <!--********************************************************************-->
-<nav class="navbar navbar-default my-top-navigation" data-spy="affix" data-offset-top="197">
+<div class="navbar navbar-inverse navbar-custom" data-spy="affix" data-offset-top="197" id="my-nav">
     <div class="container">
-        <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Arduino</a></li>
-            <li><a href="#">Eletrônica</a></li>
-            <li><a href="#">Sistemas Embarcados</a></li>
-            <li><a href="#">Programação</a></li>
-            <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Mais <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Programação</a></li>
-                    <li><a href="#">Ferramentas</a></li>
-                    <li><a href="#">Processamento de Imagens</a></li>
-                    <li><a href="#">Notícias</a></li> 
-                    <li><a href="#">Vídeos</a></li> 
-                </ul>
-            </li>
-            <li><a href="#"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a></li>
-        </ul>
-    </div>
-</nav>
+      
+        <div class="navbar-header">
+            <div class="row">
 
+                <div class="col-sm-9 col-xs-9">
+                    <form action="" method="" role="form" class="visible-xs-inline-block">
+                        <div class="form-group my-search-field">
+                            <label for="searchField" class="sr-only">Pesquisar no site</label>
+                            <div class="input-group">
+                                <!-- <span class="input-group-addon glyphicon glyphicon-search" aria-hidden="true"></span> -->
+                                <input type="text" class="form-control" id="searchField" name="search" placeholder="Pesquisar..." required/>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-sm-3 col-xs-3">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                </div>
+            </div><!--/.row -->
+        </div><!--/.navbar-header -->
+      
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav nav-justified">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Arduino</a></li>
+                <li><a href="#">Eletrônica</a></li>
+                <li><a href="#">Linux</a></li>
+                <li><a href="#">Programação</a></li>
+                <li><a href="#">Ferramentas</a></li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="my-nowrap">Mais &nbsp;<span class="caret"></span></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Sistemas Embarcados</a></li>
+                        <li><a href="#">Processamento de Imagens</a></li>
+                        <li><a href="#">Notícias</a></li>
+                        <li><a href="#">Vídeos</a></li>
+                        <li><a href="#">Artigos Pessoais</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Sobre o Autor</a></li>
+                    </ul>
+                </li>
+                <!-- <li><a href="#"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></li> -->
+            </ul>
+      </div><!--/.nav-collapse -->
+    </div><!--/.container -->
+</div><!--/.navbar -->
 
 
 
@@ -83,9 +113,9 @@
                     <img src="imagens/abstract.jpg" alt="Abstract" style="width:100%">
                 </a>
                 <div class="caption">
-                   <h3><a href="#">Eletromagnetismo</a></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quam lacus, vulputate eu lacus sed, semper finibus purus. Praesent ac tempus sem. Ut lorem neque, feugiat non efficitur vel, suscipit et mi. Maecenas blandit mauris at justo tempus tristique. Suspendisse vel finibus nunc, eget malesuada ex. Pellentesque pulvinar eros vel. <a href="#">Leia mais...</a></p>
-                        <p class="text-muted">05/10/2017</p>
+                    <h3><a href="#">Eletromagnetismo</a></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quam lacus, vulputate eu lacus sed, semper finibus purus. Praesent ac tempus sem. Ut lorem neque, feugiat non efficitur vel, suscipit et mi. Maecenas blandit mauris at justo tempus tristique. Suspendisse vel finibus nunc, eget malesuada ex. Pellentesque pulvinar eros vel. <a href="#">Leia mais...</a></p>
+                    <p class="text-muted">05/10/2017</p>
                 </div>
             </div>
         </div>
@@ -95,9 +125,9 @@
                     <img src="imagens/barco.jpg" alt="Barco" style="width:100%">
                 </a>
                 <div class="caption">
-                   <h3><a href="#">Sistemas de Controle</a></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quam lacus, vulputate eu lacus sed, semper finibus purus. Praesent ac tempus sem. Ut lorem neque, feugiat non efficitur vel, suscipit et mi. Maecenas blandit mauris at justo tempus tristique. Suspendisse vel finibus nunc, eget malesuada ex. Pellentesque pulvinar eros vel. <a href="#">Leia mais...</a></p>
-                        <p class="text-muted">05/10/2017</p>
+                    <h3><a href="#">Sistemas de Controle</a></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quam lacus, vulputate eu lacus sed, semper finibus purus. Praesent ac tempus sem. Ut lorem neque, feugiat non efficitur vel, suscipit et mi. Maecenas blandit mauris at justo tempus tristique. Suspendisse vel finibus nunc, eget malesuada ex. Pellentesque pulvinar eros vel. <a href="#">Leia mais...</a></p>
+                    <p class="text-muted">05/10/2017</p>
                 </div>
             </div>
         </div>
@@ -107,9 +137,9 @@
                     <img src="imagens/caribe.jpg" alt="Caribe" style="width:100%">
                 </a>
                 <div class="caption">
-                   <h3><a href="#">Cálculo Numérico</a></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quam lacus, vulputate eu lacus sed, semper finibus purus. Praesent ac tempus sem. Ut lorem neque, feugiat non efficitur vel, suscipit et mi. Maecenas blandit mauris at justo tempus tristique. Suspendisse vel finibus nunc, eget malesuada ex. Pellentesque pulvinar eros vel. <a href="#">Leia mais...</a></p>
-                        <p class="text-muted">05/10/2017</p>
+                    <h3><a href="#">Cálculo Numérico</a></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quam lacus, vulputate eu lacus sed, semper finibus purus. Praesent ac tempus sem. Ut lorem neque, feugiat non efficitur vel, suscipit et mi. Maecenas blandit mauris at justo tempus tristique. Suspendisse vel finibus nunc, eget malesuada ex. Pellentesque pulvinar eros vel. <a href="#">Leia mais...</a></p>
+                    <p class="text-muted">05/10/2017</p>
                 </div>
             </div>
         </div>
@@ -122,9 +152,9 @@
                     <img src="imagens/carro.jpg" alt="Carro" style="width:100%">
                 </a>
                 <div class="caption">
-                   <h3><a href="#">Eletrônica Digital</a></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quam lacus, vulputate eu lacus sed, semper finibus purus. Praesent ac tempus sem. Ut lorem neque, feugiat non efficitur vel, suscipit et mi. Maecenas blandit mauris at justo tempus tristique. Suspendisse vel finibus nunc, eget malesuada ex. Pellentesque pulvinar eros vel. <a href="#">Leia mais...</a></p>
-                        <p class="text-muted">05/10/2017</p>
+                    <h3><a href="#">Eletrônica Digital</a></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quam lacus, vulputate eu lacus sed, semper finibus purus. Praesent ac tempus sem. Ut lorem neque, feugiat non efficitur vel, suscipit et mi. Maecenas blandit mauris at justo tempus tristique. Suspendisse vel finibus nunc, eget malesuada ex. Pellentesque pulvinar eros vel. <a href="#">Leia mais...</a></p>
+                    <p class="text-muted">05/10/2017</p>
                 </div>
             </div>
         </div>
@@ -134,9 +164,9 @@
                     <img src="imagens/coffee.jpg" alt="Coffee" style="width:100%">
                 </a>
                 <div class="caption">
-                   <h3><a href="#">Eletrônica Analógica</a></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quam lacus, vulputate eu lacus sed, semper finibus purus. Praesent ac tempus sem. Ut lorem neque, feugiat non efficitur vel, suscipit et mi. Maecenas blandit mauris at justo tempus tristique. Suspendisse vel finibus nunc, eget malesuada ex. Pellentesque pulvinar eros vel. <a href="#">Leia mais...</a></p>
-                        <p class="text-muted">05/10/2017</p>
+                    <h3><a href="#">Eletrônica Analógica</a></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quam lacus, vulputate eu lacus sed, semper finibus purus. Praesent ac tempus sem. Ut lorem neque, feugiat non efficitur vel, suscipit et mi. Maecenas blandit mauris at justo tempus tristique. Suspendisse vel finibus nunc, eget malesuada ex. Pellentesque pulvinar eros vel. <a href="#">Leia mais...</a></p>
+                    <p class="text-muted">05/10/2017</p>
                 </div>
             </div>
         </div>
@@ -146,9 +176,9 @@
                     <img src="imagens/colors.jpg" alt="Colors" style="width:100%">
                 </a>
                 <div class="caption">
-                   <h3><a href="#">Processamento de Sinais</a></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quam lacus, vulputate eu lacus sed, semper finibus purus. Praesent ac tempus sem. Ut lorem neque, feugiat non efficitur vel, suscipit et mi. Maecenas blandit mauris at justo tempus tristique. Suspendisse vel finibus nunc, eget malesuada ex. Pellentesque pulvinar eros vel. <a href="#">Leia mais...</a></p>
-                        <p class="text-muted">05/10/2017</p>
+                    <h3><a href="#">Processamento de Sinais</a></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quam lacus, vulputate eu lacus sed, semper finibus purus. Praesent ac tempus sem. Ut lorem neque, feugiat non efficitur vel, suscipit et mi. Maecenas blandit mauris at justo tempus tristique. Suspendisse vel finibus nunc, eget malesuada ex. Pellentesque pulvinar eros vel. <a href="#">Leia mais...</a></p>
+                    <p class="text-muted">05/10/2017</p>
                 </div>
             </div>
         </div>
@@ -216,25 +246,25 @@
     <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
             <div class="thumbnail">
-                <a href="imagens/digital.jpg">
-                    <img src="imagens/digital.jpg" alt="Digital" style="width:100%">
+                <a href="imagens/matrix.jpg">
+                    <img src="imagens/matrix.jpg" alt="Matrix" style="width:100%">
                 </a>
                 <div class="caption">
-                   <h3><a href="#">Física Moderna</a></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quam lacus, vulputate eu lacus sed, semper finibus purus. Praesent ac tempus sem. Ut lorem neque, feugiat non efficitur vel, suscipit et mi. Maecenas blandit mauris at justo tempus tristique. Suspendisse vel finibus nunc, eget malesuada ex. Pellentesque pulvinar eros vel. <a href="#">Leia mais...</a></p>
-                        <p class="text-muted">05/10/2017</p>
+                    <h3><a href="#">Física Moderna</a></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quam lacus, vulputate eu lacus sed, semper finibus purus. Praesent ac tempus sem. Ut lorem neque, feugiat non efficitur vel, suscipit et mi. Maecenas blandit mauris at justo tempus tristique. Suspendisse vel finibus nunc, eget malesuada ex. Pellentesque pulvinar eros vel. <a href="#">Leia mais...</a></p>
+                    <p class="text-muted">05/10/2017</p>
                 </div>
             </div>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
             <div class="thumbnail">
-                <a href="imagens/earth.jpg">
-                    <img src="imagens/earth.jpg" alt="Earth" style="width:100%">
+                <a href="imagens/road.jpg">
+                    <img src="imagens/road.jpg" alt="Road" style="width:100%">
                 </a>
                 <div class="caption">
-                   <h3><a href="#">Sistemas de Comunicação</a></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quam lacus, vulputate eu lacus sed, semper finibus purus. Praesent ac tempus sem. Ut lorem neque, feugiat non efficitur vel, suscipit et mi. Maecenas blandit mauris at justo tempus tristique. Suspendisse vel finibus nunc, eget malesuada ex. Pellentesque pulvinar eros vel. <a href="#">Leia mais...</a></p>
-                        <p class="text-muted">05/10/2017</p>
+                    <h3><a href="#">Sistemas de Comunicação</a></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quam lacus, vulputate eu lacus sed, semper finibus purus. Praesent ac tempus sem. Ut lorem neque, feugiat non efficitur vel, suscipit et mi. Maecenas blandit mauris at justo tempus tristique. Suspendisse vel finibus nunc, eget malesuada ex. Pellentesque pulvinar eros vel. <a href="#">Leia mais...</a></p>
+                    <p class="text-muted">05/10/2017</p>
                 </div>
             </div>
         </div>
@@ -267,7 +297,17 @@
             <!-- Conteúdo das abas-->
             <div class="tab-content">
                 <div class="tab-pane fade active in" id="tab-arduino">
-                    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut convallis blandit nunc a molestie. Mauris eu ante facilisis, posuere diam in, iaculis dolor. Donec hendrerit placerat odio. Morbi hendrerit risus ut ante blandit fermentum. Vivamus non nisl ac quam aliquet imperdiet tempor at erat. Praesent sed ante eget ipsum blandit efficitur ac ut dolor. Aliquam erat volutpat. Ut posuere nulla magna, ut laoreet est fermentum quis. Donec non nisl sit amet tortor laoreet volutpat ut nec nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed sollicitudin venenatis lacus ut aliquet. Nunc fermentum orci purus, et efficitur magna mollis quis. Nam eget venenatis metus. Etiam sed rutrum nunc.</p>
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" src="..." alt="...">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">Media heading</h4>
+                            <p></p>
+                        </div>
+                </div>
                 </div>
                 <div class="tab-pane fade" id="tab-eletronica">
                     <p class="text-justify">Nam et eros tellus. Aenean mattis sapien nisi, eget auctor ligula dignissim nec. In vel ligula non felis feugiat luctus. Sed aliquam tempor mi, eget accumsan purus ullamcorper sed. Nam in tellus elementum, facilisis quam id, interdum urna. Phasellus ac nibh orci. Suspendisse malesuada turpis non mauris gravida convallis. Sed eu tempor dui. Pellentesque volutpat ultricies lectus, quis condimentum nunc ultricies sed. Sed vitae vehicula ipsum, vel scelerisque orci. Sed ornare tortor ac purus auctor pharetra. Nunc dignissim, libero a varius blandit, velit lectus mattis mi, vulputate porta lectus orci quis ligula.</p>

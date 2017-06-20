@@ -6,16 +6,8 @@
         font-weight: normal;
         font-style: normal;
 }
-.my-site-title{
-    font-family: rexlia;
-    font-size: 4.4em;
-    margin-bottom: 30px;
-}
-.my-site-description{
-    font-family: Georgia, serif;
-    font-size: 1.3em;
-    font-style: italic;
-
+body{
+    background-color: #FEFBFE;
 }
 .my-top-container{
     padding-top: 30px;
@@ -23,20 +15,28 @@
     background-color: black;
     color: white;
 }
-.my-top-navigation{
-    background-color: yellow;
+.my-site-title{
+    font-family: rexlia;
+    font-size: 5em;
+    margin-bottom: 30px;
 }
-.my-top-navigation a{
-    background-color: none;
-    text-transform: uppercase;
-    font-family: "Helvetica W01", Arial, Sans-serif;
-    font-weight: bold;
-    letter-spacing: 0.16em;
-    color: #F9F8F6;
-    display: inline-block;
-    width: auto;
-    margin-left: auto;
-    margin-right: auto;
+@media (max-width: 481px) {
+  .my-site-title{
+      font-size: 3.2em;
+  }
+}
+.my-site-description{
+    font-family: Georgia, serif;
+    font-size: 1.3em;
+    font-style: italic;
+}
+.my-search-field{
+    margin-left: 20px;
+    margin-top: 7px;
+    margin-bottom: 0px;
+}
+.my-nowrap{
+    white-space: nowrap;
 }
 .my-author-photo{
     margin-right: 20px;
@@ -45,23 +45,12 @@
     width: 200px;
     float: left;
 }
-
 .my-author-description{
     font-size: 16px;
     line-height: 1.8em;
 }
 
-/* Configurações para a barra de navegação superior */
-.affix {
-    top: 0;
-    width: 100%;
-}
-.affix + .container-fluid {
-    padding-top: 0px;
-}
-.navbar{
-    z-index: 100;
-}
+
 
 /* Modificação para mostrar a faixa escura atrás do título no slider */
 .carousel-caption {
@@ -101,4 +90,46 @@ footer h3 {
     padding-top: 10px;
     padding-bottom: 10px;
     margin: 0px;
+}
+
+
+
+/* Configurações da barra de navegação superior */
+#my-nav {
+  width: 100%;
+  position:static;
+  top:-32px;
+}
+#my-nav.affix {
+   position: fixed;
+   top: 0;
+   z-index:10;
+   -webkit-transition: all .6s ease-in-out;
+}
+@media (min-width: 767px) {
+  .navbar-nav.nav-justified > li{
+      float:none;
+  }
+}
+.navbar-nav {
+  margin: 1px 1px; 
+}  
+.navbar-custom {
+    background-color: #000000;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-width: 0px;
+}
+.navbar-custom  .navbar-nav>li>a {
+    color: #DDDDDD;
+}
+.navbar-custom  .navbar-nav li>a:hover, .navbar-nav li .open, .navbar-custom .navbar-nav .active a  {
+    background-color: #000000;
+}
+.navbar-custom .dropdown-menu{
+    right: 0;
+}
+.navbar-custom .navbar-nav>.dropdown>a .caret {
+    border-top-color: #999;
+    border-bottom-color: #999;
 }
