@@ -42,59 +42,31 @@
 <!--********************************************************************-->
 <!--********************  BARRA DE NAVEGAÇÃO FIXA  *********************-->
 <!--********************************************************************-->
-<div class="navbar navbar-inverse navbar-custom" data-spy="affix" data-offset-top="197" id="my-nav">
+<div class="my-navbar-wrapper">
     <div class="container">
-      
-        <div class="navbar-header">
-            <div class="row">
 
-                <div class="col-sm-9 col-xs-9">
-                    <form action="" method="" role="form" class="visible-xs-inline-block">
-                        <div class="form-group my-search-field">
-                            <label for="searchField" class="sr-only">Pesquisar no site</label>
-                            <div class="input-group">
-                                <!-- <span class="input-group-addon glyphicon glyphicon-search" aria-hidden="true"></span> -->
-                                <input type="text" class="form-control" id="searchField" name="search" placeholder="Pesquisar..." required/>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+        <ul class="my-navbar hidden-xs">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Arduino</a></li>
+            <li><a href="#">Eletrônica</a></li>
+            <li><a href="#">Ferramentas</a></li>
+            <li><a href="#">Linux</a></li>
+            <li><a href="#">Notícias</a></li>
+            <li><a href="#"><span class="my-nowrap">Mais <span class="caret"></span></span></a>
+                <!-- <ul>
+                    <li><a href="#">Sistemas Embarcados</a></li>
+                    <li><a href="#">Processamento de Imagens</a></li>
+                    <li><a href="#">Vídeos</a></li>
+                    <li><a href="#">Artigos Pessoais</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Sobre o Autor</a></li>
+                </ul> -->
+            </li>
+            <li><a href="#"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></li>
+        </ul>
 
-                <div class="col-sm-3 col-xs-3">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    </button>
-                </div>
-            </div><!--/.row -->
-        </div><!--/.navbar-header -->
-      
-        <div class="collapse navbar-collapse">
-            <ul class="nav navbar-nav nav-justified">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Arduino</a></li>
-                <li><a href="#">Eletrônica</a></li>
-                <li><a href="#">Linux</a></li>
-                <li><a href="#">Programação</a></li>
-                <li><a href="#">Ferramentas</a></li>
-                <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="my-nowrap">Mais &nbsp;<span class="caret"></span></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Sistemas Embarcados</a></li>
-                        <li><a href="#">Processamento de Imagens</a></li>
-                        <li><a href="#">Notícias</a></li>
-                        <li><a href="#">Vídeos</a></li>
-                        <li><a href="#">Artigos Pessoais</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">Sobre o Autor</a></li>
-                    </ul>
-                </li>
-                <!-- <li><a href="#"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></li> -->
-            </ul>
-      </div><!--/.nav-collapse -->
     </div><!--/.container -->
-</div><!--/.navbar -->
+</div><!--/.my-navbar-wrapper -->
 
 
 
@@ -107,7 +79,7 @@
     </div>
     <!-- Primeira linha -->
     <div class="row">
-        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
             <div class="thumbnail">
                 <a href="imagens/abstract.jpg">
                     <img src="imagens/abstract.jpg" alt="Abstract" style="width:100%">
@@ -119,7 +91,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
             <div class="thumbnail">
                 <a href="imagens/barco.jpg">
                     <img src="imagens/barco.jpg" alt="Barco" style="width:100%">
@@ -131,7 +103,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
             <div class="thumbnail">
                 <a href="imagens/caribe.jpg">
                     <img src="imagens/caribe.jpg" alt="Caribe" style="width:100%">
@@ -143,10 +115,7 @@
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Segunda linha -->
-    <div class="row">
-        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
             <div class="thumbnail">
                 <a href="imagens/carro.jpg">
                     <img src="imagens/carro.jpg" alt="Carro" style="width:100%">
@@ -158,7 +127,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
             <div class="thumbnail">
                 <a href="imagens/coffee.jpg">
                     <img src="imagens/coffee.jpg" alt="Coffee" style="width:100%">
@@ -170,7 +139,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
             <div class="thumbnail">
                 <a href="imagens/colors.jpg">
                     <img src="imagens/colors.jpg" alt="Colors" style="width:100%">
@@ -300,7 +269,7 @@
                     <div class="media">
                         <div class="media-left">
                             <a href="#">
-                                <img class="media-object" src="..." alt="...">
+                                <img class="media-object" src="" alt="">
                             </a>
                         </div>
                         <div class="media-body">
@@ -449,5 +418,8 @@
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- Meus scripts -->
+    <script src="javascript.js"></script>
 </body>
 </html>

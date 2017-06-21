@@ -30,11 +30,6 @@ body{
     font-size: 1.3em;
     font-style: italic;
 }
-.my-search-field{
-    margin-left: 20px;
-    margin-top: 7px;
-    margin-bottom: 0px;
-}
 .my-nowrap{
     white-space: nowrap;
 }
@@ -49,6 +44,58 @@ body{
     font-size: 16px;
     line-height: 1.8em;
 }
+
+
+/* Configurações da barra de navegação superior */
+.my-navbar-wrapper{
+    background-color: #000000;
+}
+.my-navbar{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    display: -webkit-flex; /* Safari */
+    -webkit-justify-content: space-around; /* Safari 6.1+ */
+    display: flex;
+    justify-content: space-between;
+}
+.my-navbar li{
+    display: inline-block;
+    padding: 10px 10px;
+    padding-bottom: 10px; 
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px; 
+}
+.my-navbar li.active{
+    background-color: #DDD;
+}
+.my-navbar li.active > a{
+    color: #111;
+    pointer-events: none;
+    cursor: default;
+}
+
+.my-navbar li > a{
+    font-family: "Neue Helvetica W01", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: #FDFDFD;
+}
+.my-navbar li > a:hover{
+    color: #348CB3;
+}
+.my-sticky-navbar {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  border-top: 0;
+}
+
 
 
 
@@ -92,44 +139,3 @@ footer h3 {
     margin: 0px;
 }
 
-
-
-/* Configurações da barra de navegação superior */
-#my-nav {
-  width: 100%;
-  position:static;
-  top:-32px;
-}
-#my-nav.affix {
-   position: fixed;
-   top: 0;
-   z-index:10;
-   -webkit-transition: all .6s ease-in-out;
-}
-@media (min-width: 767px) {
-  .navbar-nav.nav-justified > li{
-      float:none;
-  }
-}
-.navbar-nav {
-  margin: 1px 1px; 
-}  
-.navbar-custom {
-    background-color: #000000;
-    font-weight: 700;
-    text-transform: uppercase;
-    border-width: 0px;
-}
-.navbar-custom  .navbar-nav>li>a {
-    color: #DDDDDD;
-}
-.navbar-custom  .navbar-nav li>a:hover, .navbar-nav li .open, .navbar-custom .navbar-nav .active a  {
-    background-color: #000000;
-}
-.navbar-custom .dropdown-menu{
-    right: 0;
-}
-.navbar-custom .navbar-nav>.dropdown>a .caret {
-    border-top-color: #999;
-    border-bottom-color: #999;
-}
