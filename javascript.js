@@ -21,11 +21,19 @@ $(document).ready(function() {
 	        .delay(200)
 	        .slideDown(500);
 	        isDown = true;
+	        
+	        $('.my-active-navbar')
+	        .removeClass('my-active-static')
+	        .addClass('my-active-sticky');
 	    }
 
 	    else if ( (scrollOffsetTop < navbarOffsetTop) && isDown ) {
 	        $('.my-navbar-wrapper').removeClass('my-sticky-navbar'); 
 	        isDown = false;
+
+	        $('.my-active-navbar')
+	        .removeClass('my-active-sticky')
+	        .addClass('my-active-static');
 	    }
 	};
 
