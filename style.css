@@ -69,10 +69,10 @@ body{
     border-top-left-radius: 4px; 
 }
 .my-navbar > li.active {
-    background-color: #DDD;
+    background-color: #424242;
 }
 .my-navbar > li.active > a{
-    color: #111;
+    color: #FDFDFD;
     pointer-events: none;
     cursor: default;
 }
@@ -83,6 +83,8 @@ body{
     text-transform: uppercase;
     letter-spacing: 0.15em;
     color: #FDFDFD;
+    padding: 5px 0px;
+    margin: 0;
 }
 .my-navbar li > a:hover {
     color: #33A0F0;
@@ -121,8 +123,12 @@ body{
     background-color: gray;
 }
 .my-dropdown-menu > li > a {
+    font-family: "Neue Helvetica W01", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+    font-size: 0.9em;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
     color: #FFFFFF; 
-    text-decoration: none; 
     padding: 10px; 
     display: block;
 }

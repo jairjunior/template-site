@@ -1,6 +1,6 @@
 "use strict";
 
-var contador = 0;
+
 $(document).ready(function() {
 	
   // Pega o offset da barra de navegação em relação ao topo da página quando em "repouso"
@@ -20,8 +20,6 @@ $(document).ready(function() {
 	        .hide()
 	        .delay(200)
 	        .slideDown(500);
-	        contador ++;
-	        console.log("Número de vezes: "+contador);
 	        isDown = true;
 	    }
 
