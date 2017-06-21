@@ -25,5 +25,21 @@ $(document).ready(function() {
 
 
 
+	// Dropdown Menu na barra de navegação superior
+	$(".my-dropdown").hover(
+  		function () {
+     		$(".my-dropdown-menu").slideDown("medium");
+  		}, 
+  		function () {
+     		$(".my-dropdown-menu").slideUp("medium");
+  		}
+	);
+
+
+	// Links desabilitados
+	$('.my-link-disabled').click(function(e){
+     e.preventDefault();
+  })
+
 
 });
