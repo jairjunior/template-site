@@ -17,12 +17,12 @@ body{
 }
 .my-site-title{
     font-family: rexlia;
-    font-size: 5em;
+    font-size: 3.2em;
     margin-bottom: 30px;
 }
-@media (max-width: 481px) {
+@media (min-width: 768px) {
   .my-site-title{
-      font-size: 3.2em;
+      font-size: 5em;
   }
 }
 .my-site-description{
